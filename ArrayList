@@ -1,0 +1,33 @@
+class ArrayList
+    {
+        private int[] _arrayTest;
+        public ArrayList()
+        {
+            _arrayTest = new int[16];
+        }
+        public void Add(int num)
+        {
+            _arrayTest[0] = num;
+        }
+        public Array Return()
+        {
+            return _arrayTest;
+        }
+    }
+    
+    --------------------------------------------------------------------------
+    class Program
+    {      
+        static void Main(string[] args)
+        {
+            ArrayList array = new ArrayList();
+            array.Add(12);
+            var arr = array.Return();
+            foreach (var i in arr)
+            {
+                Console.WriteLine(i);
+            }           
+            Console.ReadLine();
+        }
+       
+    }
